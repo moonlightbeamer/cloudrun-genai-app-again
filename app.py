@@ -57,7 +57,7 @@ class UploadForm(FlaskForm):
     submit = SubmitField()
 
 
-vertexai.init(project=os.environ["PROJECT_ID"], location="us-central1")
+vertexai.init(project=os.environ["PROJECT_ID"], location="us-east1")
 
 model = GenerativeModel("gemini-pro")
 
