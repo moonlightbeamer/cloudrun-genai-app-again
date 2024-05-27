@@ -17,5 +17,5 @@ WORKDIR /app
 COPY . ./
 RUN pip install -r requirements.txt
 
-EXPOSE 8080
-ENTRYPOINT ["python3", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
+EXPOSE 8081
+ENTRYPOINT ["python3", "app.py", "--server.port=8081", "--server.address=0.0.0.0"]
